@@ -1,0 +1,57 @@
+Total => 7
+Categorical => 3
+	- sex
+	- smoker
+	- region
+
+Numerical => 4
+	- age
+	- bmi
+	- children
+	- charges
+
+no of records => 1338
+
+
+
+====================================Features===================================
+# age
+	- range from 18 - 64
+	- min is 18 and max is 64, mean is 39, standard_deviation is 14
+
+# bmi 
+	- range from 15.96 - 53.13
+	- skewness is positvely right skewed & kurtosis is negative but close to zero
+	- mean is 30, sum is 41027, standard_deviation is 6.09
+	- it is normally distributed 
+	- but there are outliers, 53.13, 52.18, 50.38, 49.06, 48.07, 47.17
+	- most of the data lies around 26.2725 - 34.7
+
+# area
+	- southeast
+	- southwest
+	- northwest
+	- northeast
+
+# Hot_encoding	
+	- female	- 0
+	- male		- 1
+	
+	- yes		- 1
+	- no		- 0
+
+	- northeast		- 1
+	- southeast		- 2
+	- nothwest		- 3
+	- southwest		- 4
+====================================Research===================================
+Bmi = weight (in kilograms (kg/m2)) / height (in meter square (m2)) # divide 100 by height gives meters
+Normal = 18.5 to 24.9
+Obese = 30 or higher
+Overweight = 25 to 29.9
+
+====================================Findings===================================
+- We have a high correlation with the smoker who smoke have high charges which is positive association
+	Sum of charges interms of smoke
+	- no	: 8974061.469
+	- yes	: 8781763.522

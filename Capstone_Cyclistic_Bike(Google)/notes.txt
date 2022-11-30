@@ -1,0 +1,236 @@
+Numerical features
+	- start_lat
+	- start_lng
+	- end_lat
+	- end_lng
+
+Categorical features
+	- ride_id
+	- rideable_type
+	- started_at
+	- ended_at
+	- start_station_name
+	- start_station_id
+	- end_station_name
+	- end_station_id
+	- member_casual
+
+#========================== Attributes ===========================#
+ride_id					: tells about each ride of a particular ride (primary key)
+rideable_type			: electric_bike, classic_bike, docked_bike
+started_at				: datetime field
+ended_at				: datetime field
+start_station_name		: biker starting point
+start_station_id		: 	
+end_station_name		: biker ending point	
+end_station_id			: 
+start_lat				: geographic-11
+start_lng				: geographic-12
+end_lat					: geographic-01
+end_lng					: geographic-02
+member_casual			: member, casual
+
+#=================== sample ========================#
+ride_id                         E19E6F1B8D4C42ED
+rideable_type                      electric_bike
+started_at                   2021-01-23 16:14:19
+ended_at                     2021-01-23 16:24:44
+start_station_name    California Ave & Cortez St
+start_station_id                           17660
+end_station_name                             NaN
+end_station_id                               NaN
+start_lat                              41.900341
+start_lng                             -87.696743
+end_lat                                    41.89
+end_lng                                   -87.72
+member_casual                             member
+
+#=================================================== Team Members ========================================================#
+- Cyclistic
+	- 5,800 bicyles and 600 docking stations
+	- reclining bikes, hand tricycles, and cargo bikes
+	- making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike.
+	- The majority of riders opt for traditional bikes (null_hypothesis)
+	- 8% of riders use the assistive options (null_hypothesis)
+	- Cyclistic users are more likely to ride for leisure (null_hypothesis)
+	- but about 30% use them to commute to work each day. (null_hypothesis)
+
+	# didn't understand
+		- reclining, hand_tricycles, cargo bikes
+		- electric_bike, classic_bike, docked_bike(disable_cycle)
+
+- Lily Moreno
+	- The director of marketing and your manager.
+	- Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program.
+	- These may include email, social media, and other channels.
+
+- Cyclistic marketing analytics team
+	- A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
+	- You joined this team six months ago and have been busy learning about Cyclistic’s mission and business goals
+
+- Cyclistic exective team
+	- The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
+
+
+#=================================================== info =============================================================#
+	- Started in 2016, the program has grown to a fleet of 5,824 bicycles 
+	- That are geotracked and locked into a network of 692 stations across Chicago
+	- The bikes can be unlocked from one station and returned to any other station in the system anytime. (out of track)
+	- The flexibility of its pricing plans: single-ride passes, full-day passes and annual memberships.
+	- Customers who purchase single-ride or full-day passes are referred to as casual riders. 
+	- Customers who purchase annual memberships are Cyclistic members
+	- Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders (director believes to be true)
+	- The pricing flexibility helps Cyclistic attract more customers
+	- Rather than creating a marketing campaign that targets all-new customers (Market-strategy)
+	- Moreno believes there is a very good chance to convert casual riders into members. (Imp)
+	- She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs
+	- Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members.
+	- The marketing analyst team needs to better understand how annual members and casual riders differ
+	- Why casual riders would buy a membership, and how digital media could affect their marketing tactics. 
+	- Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends
+
+#========================================================== Analysis ===================================================================#
+#Ask:
+	Key objective:
+		- maximizing the number of annual memberships (director decision of marketing = (correct, wrong) assumption)
+			- Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders
+			- so there is a probability of being correct interms of director decision but there is a slight chance of wrong.by percentage
+			- so there is a probability of being wrong interms of director decision but there is a slight chance of correct.by percentage
+
+		- understand how casual riders and annual members use Cyclistic bikes differently
+		- From these insights, your team will design a new marketing strategy to convert casual riders into annual members
+
+	Questions
+		1.	How do annual members and casual riders use Cyclistic bikes differently? 
+		2.	Why would casual riders buy Cyclistic annual memberships? 
+		3.	How can Cyclistic use digital media to influence casual riders to become members? 
+	
+	Produce report with following deliverables
+		1.	A clear statement of the business task 
+		2.	A description of all data sources used 
+		3.	Documentation of any cleaning or manipulation of data 
+		4.	A summary of your analysis 
+		5.	Supporting visualizations and key findings 
+		6.	Your top three recommendations based on your analysis 
+
+	Guiding Questions
+		- What is the problem you are trying to solve? 
+		- How can your insights drive business decisions? 
+
+	Key tasks 
+		- Identify the business task 
+		- Consider key stakeholders 
+
+	Deliverable 
+		- A clear statement of the business task 
+
+
+Prepare:
+Process:
+Analyse:
+Share:
+Act:
+
+#===================== findings ===========================#
+- In a dataset of previous 12 months(2021) of total rows count is 5595063 (55lakhs or 5million)
+- In all tables the ride_id is unique
+
+
+#==================================================================================================================#
+# Tables of member_casual
+	- 2021_Jan
+		- member : 78717
+		- casual : 18117
+	- 2021_Feb
+		- member : 39491
+		- casual : 10131
+	- 2021_Mar
+		- member : 84033
+		- casual : 144463
+	- 2021_Apr
+		- member : 200629
+		- casual : 136601
+	- 2021_May
+		- member : 256916
+		- casual : 274717
+	- 2021_Jun
+		- member : 358914
+		- casual : 370681
+	- 2021_Jul
+		- member : 442056
+		- casual : 380354
+	- 2021_Aug
+		- member : 391681
+		- casual : 412671
+	- 2021_Sep
+		- member : 363890
+		- casual : 392257
+	- 2021_Oct
+		- member : 373984
+		- casual : 257242
+	- 2021_Nov
+		- member : 106929
+		- casual : 253049
+	- 2021_Dec
+		- member : 177802
+		- casual : 69738
+
+# tables of rideable_type
+	- 2021_Jan
+		- classic_bike    : 61700
+		- docked_bike     : 2106
+		- electric_bike   : 33028 
+	- 2021_Feb
+		- classic_bike    : 35012
+		- docked_bike     : 1271
+		- electric_bike   : 13339
+	- 2021_Mar
+		- classic_bike    : 152545
+		- docked_bike     : 15657
+		- electric_bike   : 60294
+	- 2021_Apr
+		- classic_bike    : 214619
+		- docked_bike     : 24714
+		- electric_bike   : 97897
+	- 2021_May
+		- classic_bike   : 309093
+		- docked_bike    : 43353
+		- electric_bike  : 179187
+	- 2021_Jun
+		- classic_bike   : 435020
+		- docked_bike    : 51716
+		- electric_bike  : 242859 
+	- 2021_Jul
+		- classic_bike   : 506909
+		- docked_bike    : 57698
+		- electric_bike  : 257803
+	- 2021_Aug
+		- classic_bike   : 503033
+		- docked_bike    : 45065
+		- electric_bike  : 256254 
+	- 2021_Sep
+		- classic_bike   : 462284
+		- docked_bike    : 35337
+		- electric_bike  : 258526
+	- 2021_Oct
+		- classic_bike   : 316139
+		- docked_bike    : 22884
+		- electric_bike  : 292203 
+	- 2021_Nov
+		- classic_bike   : 154039
+		- docked_bike    : 7614
+		- electric_bike  : 198325
+	- 2021_Dec
+		- classic_bike   : 100635
+		- docked_bike    : 4928
+		- electric_bike  : 141977
+
+# Yearly basis	
+	# rideable_type
+		- classic_bike   : 32,51,028
+		- docked_bike    : 3,12,343
+		- electric_bike  : 20,31,692
+
+	# member_casual
+		- casual : 25,29,005
+		- member : 30,66,058

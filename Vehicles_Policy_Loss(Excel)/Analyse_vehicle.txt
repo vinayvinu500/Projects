@@ -1,0 +1,124 @@
+Categorical => 4
+Numerical => 5
+Total records => 15290
+
+# Column Values => 9
+Policy Number 					=> vehicle policy number 
+Age								=> person's age
+Years of Driving Experience		=> person's having year of driving experience
+Number of Vehicles				=> no of vehicle own by the person
+Gender							=> Male / Female
+Married							=> Single / Married
+Vehicle Age						=> vehicle age 
+Fuel Type Petrol Diesel etc.	=> P / D
+Losses							=> Losses occured on a particular vehicle
+
+
+===========================================Features=======================================================
+# Policy numbers
+	- Distinct policy numbers are 14138 (92.5%) (1152 policy numbers are duplicate (7.5%))
+	- mean is 149910, median is 149872, maximum is 200000, minimum is 100002, standard_deviation is 28949
+	- maximum count of 181066 and 178900 is 4
+
+# Age
+	- distinct is 55, minimum is 16, maximum is 70, mean is 42.3, standard_deviation is 18
+	- the count of age 25 is 508 (3.3%)
+
+# Year of Driving Experience
+	- no experience members(0) are 1391 (9.1%) # this states that most of them din't have the license to drive
+	- experience ranges from 0 - 53, distinct values are 54 (0.4%)
+	- minimum is 0, maximum is 53, mean is 23.7, median is 23, standard_deviation is 17.85
+
+# Number of Vehicles
+	- The maximum no of vehicles own by the people is 2 (5152) (33.7%) of market share
+	- second most highest vehicles own by the people is 3 (5095) (33.3%) of market share
+	- third most highest vehicles own by the people is 1 (2533) (16.6%) of market share
+	- least most vehicles own by the people is 4 (2510) (16.4%) of market share
+
+# Gender
+	- Females are dominating the market share of 7747 (50.7%) compared to males 7543 (49.3%)
+	- That mean every 5 samples we have 2 Males and 3 Females
+
+# Married
+	- married are dominating the market share of 7783 (50.9%) compared to singles 7507 (49.1%)
+	- that mean every 5 samples we have 3 Married and 2 Singles
+
+# Vehicle Age 
+	- new vehicles have 580 (3.8%)
+	- there are 16 distinct vehicle ages in the market (0.1%)
+	- mean is 8.65, minimum is 0, maximum is 15, standard_deviation is 4.35
+
+# Fuel Type Petrol, Diesel
+	- every 5 samples we have 3 Petrol and 2 Diesel
+	- Petrol is dominating the market share of 11670 (76.3%) compared to Diesel of 3620 (23.7%)
+
+# Losses
+	- there are 15289 (>99.9%) distinct losses in the market
+	- mean is 389.85, minimum is 12.5, maximum is 3500, standard_deviation is 253.729, sum is 5960955.085
+	- the distribution is having tail on the right # Skewness is 2.558817418, Kurtosis is 18.08168693
+	- the distribution is unimodel having maximum 2500 in histogram of 50 bins
+
+
+===========================================Findings=======================================================
+- Fuel type is highly correlated to losses
+	- The quantity of Diesel type vehicle is 3620
+		- The total sum of losses occured for the Diesel type vehicle is 2606462.898 (43.73%)
+		- On an average, the losses occured for the Diesel type vehicle is 720.0173751
+		- The maximum loss occured for the Diesel type vehicle is 3500
+		- The minimum loss occured for the Diesel type vehicle is 500.0157464
+		- The variability of losses for the Diesel type vehicle is 250.2347361 # bulginess of the distribution is high
+		- The person with the age of 22 have suffered huge loss of 123
+		- The person with the age of 28 have suffered slight loss of 56
+
+	- The quantity of Petrol type vehicle is 11670
+		- The total sum of losses occured for the Petrol type vehicle is 3354492.187 (56.27%)
+		- On an average, the losses occured for the Petrol type vehicle is 287.4457744
+		- The maximum loss occured for the Petrol type vehicle is 3462.340629
+		- The minimum loss occured for the Petrol type vehicle is 12.53452056
+		- The variability of losses for the Petrol type vehicle is 143.6147552 # bulginess of the distribution is low compared to diesel type
+		- The person with the age of 16 have suffered huge loss of 388
+		- The person with the age of 123 have suffered slight loss of 32
+
+- the no of vehicles are owned on a average person is 2 or 3
+	- 1 (2533 counts) = 16.6%
+	- 2 (5152 counts) = 33.7% (maximum people own)
+	- 3 (5095 counts) = 33.3%
+	- 4 (2510 counts) = 16.4%
+
+- New Vehicle's registered so far is 580					
+						
+- maximum years of driving experience who's age is 25					
+						
+- Females are Dominating compared to Males by owning no of vehicles in the Ratio of "51/49"	
+	- Females who owns number of vehicles are (19344) are 51%
+	- Males who owns number of vehicles are (18818)	are 49%
+						
+- The person age of 12 have the higher vehicle age				
+						
+- The market is Dominated by pertrol vehicles compare to Desiel vehicles by "P(11670) / D(3620)" are "76/24"								
+
+- Females
+	- the loss of single person of both fuel type vehicle is 3773
+	- the loss of married person of both fuel type vehicle is 3974
+	- the loss of female single person(945) prefer purchasing more diesel vehicle compare to married person(352) in the ratio of "73% / 27%"
+	- the loss of female married person(3622) prefer purchasing more petrol vehicle compare to single person (2828) in the ratio of "56% / 44%" # proportional of female single <=> female married 
+	- Females married person have high loss in petrol compared to diesel 
+	- we can assume that Married Females can tend to diesel vehicle compared to petrol vehicle because of the huge loss in petrol vehicles
+
+- Males
+	- single person of both fuel type vehicle is 3734
+	- married person of both fuel type vehicle is 3809
+	- male single person(1543) prefer purchasing more diesel type vehicle compare to married person(780) in the ratio of "66% / 34%"
+	- male single person(2191) prefer purchasing more petrol type vehicle compare to married person(3029) in the ratio of "42% / 58%"
+
+
+===============================================Business_Questions=====================================================================
+- Find out losses for the New vehicle of Diesel type Vs Petrol type
+- How many own vehicles interms of Males Vs Females 
+- What are the insights for the Married Vs Singles
+- How many females own the vehicles 
+	- 
+- How many males own the vehicles
+	- 
+- How can u predict the number of vehicles owned by males vs females
+	- Most of males & females are prefer to own 2 & 3 vehicles where females own more vehicles compared to males

@@ -1,0 +1,157 @@
+Description: 
+Dear Participants,
+
+"Today many big organizations are sitting on large chunks of data, not knowing what to do with it. They invite consultants & business analysts to have a look at data and come up with insights that could help the organization run their business better. There is no clear set of instructions in such open-ended problems and it is expected of the consultant to do a lot of exploration first and formulate the problems themselves. These DVT projects fall into the bucket of such open-ended problems and a specific problem statement has not been given intentionally. It is expected of students to explore the data and come up with good insights. There is no right and wrong answer here. There should a clear logical story which should come out of their submission."
+
+ Please find below DVT Project instructions:
+
+Note: Please upload the project on Tableau public and include the URL in a word doc and upload it.
+
+Any assignment found copied/ plagiarized with another person will not be graded and marked as zero.
+Please ensure timely submission as a post-deadline assignment will not be accepted.
+Please find the instructions here.
+
+To learn how to publish your tableau file, click here.
+
+Once you publish the story to the tableau public, please make sure you hide it on your profile so that it is not visible publicly. Only those who have access to the visualization link will be able to see it. Please follow the instructions from here to know how you can hide your visualizations. 
+
+Please use the following  datasets- (Car Claim Insurance.xlsx)
+
+Business Context 
+
+We are all aware that accidents are prone everywhere due to negligent driving or climatic conditions. An insurance company always needs to be prepared to estimate the number of accidents and the claims that they can receive at a given point time. Also understanding the pattern of claims would help the companies to frame different types of policies for the users providing better benefits and at the same time increasing the premium to the company.
+
+Problem Statement:
+
+Consider that you are a Lead Data Analyst at an Insurance Claims company that has provided you with the Car Insurance Claims dataset. You have been given a task to explore the data, create different plots and interpret useful insights/findings. Your end goal here will be to create a storyboard that you have to present to the Senior Management and the story has to have an end objective and should follow a logical flow to display that you are heading towards achieving the end objective. This will help the Senior Management in taking some decisive actions on the current claims system in place. This storyboard will be an open-ended story for you to explore various different features in the data and try to showcase different plots. Make sure to have minimum clutter in the plots, follow a consistent color scheme across all the plots, and use proper colors to highlight a specific insight. Moreover, your plots on all the dashboards should be interactive and responsive. There should be 1 dashboard that should cover the summary of the story as well as your recommendations.
+
+Important Note: Please reflect on all that you have learned while working on this project. This step is critical in cementing all your concepts and closing the loop. Please write down your thoughts here
+
+Regards,
+
+Program Office
+
+
+#=====================================================================================================================================================#
+Scenario:
+    We had a access to a large chunks of data and business wants to know the insights from the raw csv file related to car claim insurance and as a business consultants we have to explore and formulate the problems and prove some of the practical hypothesis
+
+Task:
+    Provide a actionable insights 
+
+Action:
+    
+Results:
+
+
+#=====================================================================================================================================================#
+Situation
+    The insurance company needs to be prepared to estimate the number of accidents and the claims 
+    that they can receive at a given point time. Also understanding the pattern of claims 
+    would help the companies to frame different types of policies for the users providing better benefits 
+    and at the same time increasing the premium to the company.
+
+Task:
+    As a Lead Data Analyst at an Insurance Claims company is required to explore the Car Insurance Claims dataset, 
+    create different plots and interpret useful insights/findings. 
+    The end goal is to create a storyboard that can be presented to the Senior Management, 
+    with the objective of helping them take some decisive actions on the current claims system in place.
+
+Action:
+    Profit = Revenue - Cost
+    where Revenue = premium accounts, Cost = expenses of claiming 
+    The date at which the customer has claimed 
+    The line of going peak and understand the region in that peakness 
+    The different types of policies for the users providing better benefits and 
+    at the same time increasing the premium to the company(frame personalised policies for a particular claim customer)
+
+    - Created a calculated field that adds meaningful value and is inline with the storyboard.
+    - Used filters, parameters, actions, etc. in charts to help understand data.
+    - Minimize clutter and ensure consistency in colors across charts.
+    - Created at least 5 dashboards that deliver useful insights from a business perspective.
+    - Ensure that interpretations are inline with the storyboard and from a business perspective.
+    - Make each dashboard highly interactive.
+    - Create a summary dashboard that is a part of the storyboard and includes at least 5 summary/recommendation points, 1 conclusion point, and no visualizations.
+
+Result:
+    
+
+#=====================================================================================================================================================#
+Description:
+    - we are all aware that accidents are prone everywhere due to negligent driving or some uncertain situation like climatic-conditions,etc
+    - An insurance compamy always needs to be prepared to estimate the number of accidents and the claims that they can receive at a given point
+    - Also Understanding the hidden patterns of claims 
+    - would help the companies to frame different types of policies for the users providing better benefits and at the same time increasing the premium to the company
+
+Action:
+    - the task to explore the data
+    - create different plots 
+    - interpret useful insights / findings
+    - end goal here will be to create a storyboard that you have to present to the Senior Management
+    - the story has to have an end objective
+    - should follow a logical flow to display that you are heading towards achieving the end objective
+    - the storyboard will be open-ended story for you to explore various different features in the data
+    - make sure to have minimum clutter in the plots 
+    - follow a consistent color schema across all the plots(use a proper color to highlight a specific insight)
+    - plots on all dashboard should be interactive and responsive
+    - one dashboard should cover the summary of the story as well as your recommendations
+
+
+Hypothesis
+    - car insurance are claim by the following reasons
+        - car is old and ready for accident(age of car is getting older)
+        - driver is younger and ready for accident(because older people have good experience or we can say some hypothetical situation not a good rider)
+        - driver is incapable to handle the car in tough situations
+        - Hypothetically, driver intentionally is in hurry to recover the money from the loan partner(claiming frequency is higher than the previous month)
+        - some of the uncertain situation like climatic-conditions
+        - high income driver can have higher probability to prone to accidents (due to negligence)
+        - males are prone to accidents compare to females of being or vice-versa
+        - commute to office in a well-versed traffic at the time, person can overspeed to have high probability of met accident
+        - having more kids can be high chance to met accident(controlling kids at the time of driving a car in a worse conditions)
+        - 
+
+    - KIDSDRIV and HOMEKIDS  have some sort of relationship or we can say HOMEKIDS are grownup to drive a car
+        - HOMEKIDS / KIDSDRIV (tells us the kids are remaining to growup to drive a car or some hypothetical situation these kids are able to drive car(rarest case))
+
+    - relationships
+        - variable 'YOJ' and 'INCOME' are in good relationship (because of more Years on Job, the increase in Income or vice-versa or rarest case same job income is not increased)
+        - variable 'INCOME' and 'HOME_VAL' are in good relationship
+
+    - 
+
+Corrected hypothesis    
+    - BIRTH is directly correlated with HOMEKIDS
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

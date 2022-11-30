@@ -1,0 +1,498 @@
+# link 
+https://www.kaggle.com/datasets/wenruliu/adult-income-dataset
+https://www.kaggle.com/code/soumya044/adult-census-income-gdg/notebook
+https://umagunturi789.medium.com/adult-income-prediction-using-python-1d716f700b4e
+
+An individual’s annual income results from various factors. 
+Intuitively, it is influenced by the individual’s education level, age, gender, occupation, and etc.
+
+This is a widely cited KNN dataset. I encountered it during my course, and 
+I wish to share it here because it is a good starter example for data pre-processing and machine learning practices.
+
+Fields
+The dataset contains 16 columns
+Target filed: Income
+-- The income is divide into two classes: <=50K and >50K 
+Number of attributes: 14
+-- These are the demographics and other features to describe a person
+
+We can explore the possibility in predicting income level based on the individual’s personal information.
+
+Acknowledgements
+This dataset named “adult” is found in the UCI machine learning repository
+http://www.cs.toronto.edu/~delve/data/adult/desc.html
+
+The detailed description on the dataset can be found in the original UCI documentation
+http://www.cs.toronto.edu/~delve/data/adult/adultDetail.html
+
+#==============================================================================================#
+# github
+https://github.com/saravrajavelu/Adult-Income-Analysis
+
+# classification model
+https://www.kaggle.com/code/jieyima/income-classification-model
+
+# EDA
+https://www.kaggle.com/code/alokevil/simple-eda-for-beginners
+
+
+#=================================Findings==========================================#
+# Features
+#=========== age =============#
+count    32561.000000
+mean        38.581647
+std         13.640433
+min         17.000000
+25%         28.000000
+50%         37.000000
+75%         48.000000
+max         90.000000
+Name: age, dtype: float64
+
+#=========== workclass =============#
+Private             22696
+Self-emp-not-inc     2541
+Local-gov            2093
+?                    1836
+State-gov            1298
+Self-emp-inc         1116
+Federal-gov           960
+Without-pay            14
+Never-worked            7
+Name: workclass, dtype: int64
+
+#=========== fnlwgt =============#
+count    3.256100e+04
+mean     1.897784e+05
+std      1.055500e+05
+min      1.228500e+04
+25%      1.178270e+05
+50%      1.783560e+05
+75%      2.370510e+05
+max      1.484705e+06
+Name: fnlwgt, dtype: float64
+
+#=========== education =============#
+HS-grad         10501
+Some-college     7291
+Bachelors        5355
+Masters          1723
+Assoc-voc        1382
+11th             1175
+Assoc-acdm       1067
+10th              933
+7th-8th           646
+Prof-school       576
+9th               514
+12th              433
+Doctorate         413
+5th-6th           333
+1st-4th           168
+Preschool          51
+Name: education, dtype: int64
+
+#=========== education.num =============#
+count    32561.000000
+mean        10.080679
+std          2.572720
+min          1.000000
+25%          9.000000
+50%         10.000000
+75%         12.000000
+max         16.000000
+Name: education.num, dtype: float64
+
+#=========== marital.status =============#
+Married-civ-spouse       14976
+Never-married            10683
+Divorced                  4443
+Separated                 1025
+Widowed                    993
+Married-spouse-absent      418
+Married-AF-spouse           23
+Name: marital.status, dtype: int64
+
+#=========== occupation =============#
+Prof-specialty       4140
+Craft-repair         4099
+Exec-managerial      4066
+Adm-clerical         3770
+Sales                3650
+Other-service        3295
+Machine-op-inspct    2002
+?                    1843
+Transport-moving     1597
+Handlers-cleaners    1370
+Farming-fishing       994
+Tech-support          928
+Protective-serv       649
+Priv-house-serv       149
+Armed-Forces            9
+Name: occupation, dtype: int64
+
+#=========== relationship =============#
+Husband           13193
+Not-in-family      8305
+Own-child          5068
+Unmarried          3446
+Wife               1568
+Other-relative      981
+Name: relationship, dtype: int64
+
+#=========== race =============#
+White                 27816
+Black                  3124
+Asian-Pac-Islander     1039
+Amer-Indian-Eskimo      311
+Other                   271
+Name: race, dtype: int64
+
+#=========== sex =============#
+Male      21790
+Female    10771
+Name: sex, dtype: int64
+
+#=========== capital.gain =============#
+count    32561.000000
+mean      1077.648844
+std       7385.292085
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%          0.000000
+max      99999.000000
+Name: capital.gain, dtype: float64
+
+#=========== capital.loss =============#
+count    32561.000000
+mean        87.303830
+std        402.960219
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%          0.000000
+max       4356.000000
+Name: capital.loss, dtype: float64
+
+#=========== hours.per.week =============#
+count    32561.000000
+mean        40.437456
+std         12.347429
+min          1.000000
+25%         40.000000
+50%         40.000000
+75%         45.000000
+max         99.000000
+Name: hours.per.week, dtype: float64
+
+#=========== native.country =============#
+United-States                 29170
+Mexico                          643
+?                               583
+Philippines                     198
+Germany                         137
+Canada                          121
+Puerto-Rico                     114
+El-Salvador                     106
+India                           100
+Cuba                             95
+England                          90
+Jamaica                          81
+South                            80
+China                            75
+Italy                            73
+Dominican-Republic               70
+Vietnam                          67
+Guatemala                        64
+Japan                            62
+Poland                           60
+Columbia                         59
+Taiwan                           51
+Haiti                            44
+Iran                             43
+Portugal                         37
+Nicaragua                        34
+Peru                             31
+Greece                           29
+France                           29
+Ecuador                          28
+Ireland                          24
+Hong                             20
+Cambodia                         19
+Trinadad&Tobago                  19
+Laos                             18
+Thailand                         18
+Yugoslavia                       16
+Outlying-US(Guam-USVI-etc)       14
+Hungary                          13
+Honduras                         13
+Scotland                         12
+Holand-Netherlands                1
+Name: native.country, dtype: int64
+
+#=========== income =============#
+<=50K    24720
+>50K      7841
+Name: income, dtype: int64
+
+==========================================Categorical=============================================================
+#=========== workclass(9) =============#
+- '?'
+- 'Private'
+- 'State-gov'
+- 'Federal-gov'
+- 'Self-emp-not-inc'
+- 'Self-emp-inc'
+- 'Local-gov'
+- 'Without-pay'
+- 'Never-worked'
+
+
+#=========== education(16) =============#
+- 'HS-grad'
+- 'Some-college'
+- '7th-8th'
+- '10th'
+- 'Doctorate'
+- 'Prof-school'
+- 'Bachelors'
+- 'Masters'
+- '11th'
+- 'Assoc-acdm'
+- 'Assoc-voc'
+- '1st-4th'
+- '5th-6th'
+- '12th'
+- '9th'
+- 'Preschool'
+
+#=========== marital.status(7) =============#
+- 'Widowed'
+- 'Divorced'
+- 'Separated'
+- 'Never-married'
+- 'Married-civ-spouse'
+- 'Married-spouse-absent'
+- 'Married-AF-spouse'
+
+#=========== occupation(15) =============#
+- '?'
+- 'Exec-managerial'
+- 'Machine-op-inspct'
+- 'Prof-specialty'
+- 'Other-service'
+- 'Adm-clerical'
+- 'Craft-repair'
+- 'Transport-moving'
+- 'Handlers-cleaners'
+- 'Sales'
+- 'Farming-fishing'
+- 'Tech-support'
+- 'Protective-serv'
+- 'Armed-Forces'
+- 'Priv-house-serv'
+
+#=========== relationship(6) =============#
+- 'Not-in-family'
+- 'Unmarried'
+- 'Own-child'
+- 'Other-relative'
+- 'Husband'
+- 'Wife'
+
+#=========== race(5) =============#
+- 'White'
+- 'Black'
+- 'Asian-Pac-Islander'
+- 'Other'
+- 'Amer-Indian-Eskimo'
+
+#=========== sex(2) =============#
+- 'Female' 
+- 'Male'
+
+#====================== Features(15) =====================#
+- age
+- workclass
+- fnlwgt
+- education
+- education.num
+- marital.status
+- occupation
+- relationship
+- race
+- sex
+- capital.gain
+- capital.loss
+- hours.per.week
+- native.country
+- income
+
+# Categorical 
+    - workclass
+    - education
+    - marital.status
+    - occupation
+    - relationship
+    - race 
+    - sex
+    - native.country
+    - income 
+
+# Numerical
+    - age
+    - fnlwgt
+    - education.num
+    - captial.gain
+    - captial.loss
+    - hours.per.week
+
+# label_encoding (categorical)
+    - workclass
+        - '?'                   : replace with most frequent values | probability ratio of picking random
+        - 'Private'             : 
+        - 'State-gov'           : 
+        - 'Federal-gov'         : 
+        - 'Self-emp-not-inc'    : 
+        - 'Self-emp-inc'        : 
+        - 'Local-gov'           : 
+        - 'Without-pay'         : 
+        - 'Never-worked'        : 
+
+    - education
+        - 'HS-grad'         : 
+        - 'Some-college'    : 
+        - '7th-8th'         : 
+        - '10th'            : 
+        - 'Doctorate'       :
+        - 'Prof-school'     : 
+        - 'Bachelors'       : 
+        - 'Masters'         : 
+        - '11th'            : 
+        - 'Assoc-acdm'      : 
+        - 'Assoc-voc'       : 
+        - '1st-4th'         : 
+        - '5th-6th'         : 
+        - '12th'            : 
+        - '9th'             : 
+        - 'Preschool'       : 
+
+    - marital.status
+        - 'Widowed'                 : 
+        - 'Divorced'                : 
+        - 'Separated'               : 
+        - 'Never-married'           : 
+        - 'Married-civ-spouse'      : 
+        - 'Married-spouse-absent'   : 
+        - 'Married-AF-spouse'       : 
+
+    - occupation
+        - '?'                   : replace with most frequent values | probability ratio of picking random
+        - 'Exec-managerial'     : 
+        - 'Machine-op-inspct'   : 
+        - 'Prof-specialty'      : 
+        - 'Other-service'       : 
+        - 'Adm-clerical'        : 
+        - 'Craft-repair'        : 
+        - 'Transport-moving'    : 
+        - 'Handlers-cleaners'   : 
+        - 'Sales'               : 
+        - 'Farming-fishing'     : 
+        - 'Tech-support'        : 
+        - 'Protective-serv'     : 
+        - 'Armed-Forces'        : 
+        - 'Priv-house-serv'     : 
+
+    - relationship
+        - 'Not-in-family'   : 
+        - 'Unmarried'       : 
+        - 'Own-child'       : 
+        - 'Other-relative'  : 
+        - 'Husband'         : 
+        - 'Wife'            : 
+
+    - race 
+        - 'White'               : 
+        - 'Black'               : 
+        - 'Asian-Pac-Islander'  : 
+        - 'Other'               : 
+        - 'Amer-Indian-Eskimo'  : 
+
+    - sex
+        - 'Female'  : 0
+        - 'Male'    : 1
+
+    - native.country
+        - United-States                 : 
+        - Mexico                        : 
+        - ?                             : replace with most frequent values | probability ratio of picking random
+        - Philippines                   : 
+        - Germany                       : 
+        - Canada                        : 
+        - Puerto-Rico                   : 
+        - El-Salvador                   : 
+        - India                         : 
+        - Cuba                          : 
+        - England                       : 
+        - Jamaica                       : 
+        - South                         : 
+        - China                         : 
+        - Italy                         : 
+        - Dominican-Republic            : 
+        - Vietnam                       : 
+        - Guatemala                     : 
+        - Japan                         : 
+        - Poland                        : 
+        - Columbia                      : 
+        - Taiwan                        : 
+        - Haiti                         : 
+        - Iran                          : 
+        - Portugal                      : 
+        - Nicaragua                     : 
+        - Peru                          : 
+        - Greece                        : 
+        - France                        : 
+        - Ecuador                       : 
+        - Ireland                       : 
+        - Hong                          : 
+        - Cambodia                      : 
+        - Trinadad&Tobago               : 
+        - Laos                          : 
+        - Thailand                      : 
+        - Yugoslavia                    : 
+        - Outlying-US(Guam-USVI-etc)    : 
+        - Hungary                       : 
+        - Honduras                      : 
+        - Scotland                      : 
+        - Holand-Netherlands            : 
+
+    - income 
+        - <=50K : 0
+        - >50K  : 1
+
+# one_hot_encoding (binary(0,1))
+
+
+# missing values detection 
+    - workclass         1836
+    - occupation        1843
+    - native.country     583
+
+- data has missing values in categorical features with '?'
+- mode is the best option to treat the missing categories
+
+# one_hot_encoding
+- sex       : male (21790) | female (10771) => male = 1, female = 0
+- income    : <=50K (24720) | >50K (7841) => <50K = 1, >50K = 0
+
+# skewness before log_tranformation
+age                0.558743 (positive skewed)
+fnlwgt             1.446980 (positive skewed)
+education.num     -0.311676 (zero or negative skewed)
+sex               -0.719293 (negative skewed)
+capital.gain      11.953848 (positive skewed)
+capital.loss       4.594629 (positive skewed)
+hours.per.week     0.227643 (zero or positive skewed)
+income            -1.212430 (negative skewed)
+
+# 

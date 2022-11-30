@@ -1,0 +1,31 @@
+Business
+	- to identify  the leads who can be converted into existing depositer into personal loan
+	- which will classify the account holder have more potential customers to avail personal loan
+	- our dataset contains 14 attributes and 5000 records with 9% success rate 
+
+Approach
+- there are no missing values in the dataset
+- we have outliers for the attributes such as Income, CCAvg, Mortgage
+- we have skewness for the following attributes as 
+- we have implemented logistic regression with 
+	- the accuracy with 91% 
+	- the recall with 32% where we need to focus on recall(model is prediciting) to boost 
+- we have implemented KNN
+	- we got recall with 8% compare with the base model it is decreasing
+	- majorily we have to focus on recall 
+	- as the dataset has outliers and skewed
+	- we have done scaling down
+	- in which recall we got 55%, where the accuracy is comparable and recall is boosted to 55% where the false negative is reduced with 23% compare to base model logistic model
+ 	- we have compared with the train and test accuracy (overfit or underfit)
+
+Decision Tree	
+- where we have implemented robusting model decision tree (where we don't any preprocessing like no scaling)
+- initially we fit the decisison tree, where the model is overfitted
+- so we have gone through hyperparameter tuning some of the parameter like maximum_depth, minimum_sample_depth, minimum_sample_leafs
+- after tuning the parameters, the optimal values which we got in this tuning as been implemented in the decision tree
+- we got the result, we boosted the recall value to 88% and accuracy are comparable, compare with base model we reduced 55% of errors
+- next we have implemented final model as random forest with the best hyperparameters we fit a model where are accuracy is comparable with 98%
+- finally we got the recall of 89% compare with base model 56% of false negative are reduced (where the random forest is good for prediction)
+
+Business Logic
+- so, the best model is the random forest to predict

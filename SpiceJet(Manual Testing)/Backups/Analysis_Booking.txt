@@ -1,0 +1,50 @@
+Test Cases
+Flights
+	-> By default Delhi
+	-> By default 1 Adult
+	-> By default Today Date
+===================================================================
+From, To => Functionality 
+To verify the valid details in the from and to fields
+To verify the invalid details in the from field and valid to field
+
+From, To => ECP
+	-> India has 61 cities
+	-> International 22 cities
+to validate the length of the field
+
+===================================================================
+Passengers => ECP => total 12 or 13 seats can book a person
+	-> Adult => 1 - 9
+	-> Children => 0 - 4
+	-> Infant => 0 - 4
+
+Possbility 
+	Adult 	=> 5, 9, 6, 5
+	Children 	=> 4, 0, 3, 4
+	Infant	=> 4, 4, 4, 0
+
+Note : Infant is dependent on Adult
+
+===================================================================
+Departure Date => ECP => present date - next year present date
+
+===================================================================
+Currencey => ECP => 16 => INR - KWD
+===================================================================
+Add-ons (Radio Buttons) => on or off by clicking one time or double time
+
+===================================================================
+covid-19 information => 
+	Clicking the hyperlink is working or not
+===================================================================
+Search Flight (Button) => 
+	Possibility
+		- Fill the details and click search flight button
+		- Dont fill the details and click search flight button
+===================================================================
+Check-In
+	
+
+
+	

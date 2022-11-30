@@ -1,0 +1,164 @@
+test case template
+	Project Name
+	Module Name
+	Created by 
+	Creation Date
+	Reviewed By 
+	Reviewed Date
+
+	Test Scenario ID
+	Test Scenario Description
+	Test Case ID
+	Test Case Description
+		- Valid (possibilities)
+		-  Invalid (possibilities)
+	Test Steps
+	Test Data
+	Precondition
+	Post Condition
+	Expected Result
+	Actual Result
+	Status
+	Executed by 
+	Executed Date
+	Comments
+
+==========================================================================================================
+What is Test Scenario
+	
+What is Test Cases
+
+What is Test Scenario Description
+	Verification of the length provided in the user first name field and last name field
+	Verification of the characters accepted in first Name and last name field
+	Verification of the length provided in the user first name field and last name field
+	Verification of the characters accepted in first Name and last name field
+	Verification of the length provided in the email id field
+	Verification of data provided in the email field
+	Verification of length provided in the telephone number field
+	Verification of data accepted in telephone number field
+	Verification of length provided in the password field
+	Verification of data accepted in the password field
+
+What is Test Case Detail
+	Equivalence Class Partioning
+		1. To validate valid length of input between lower & upper bounds
+		2. To validate invalid length of input less than lowerbound
+		3. To validate invalid length of input larger than upperbound
+
+	Functionality Testing
+		1. To validate valid input with only alphabets
+		2. To validate invalid input of special characters and numbers 
+		3. To validate invalid  null value
+
+	GUI Testing
+		1. To validate the title of the form
+	
+	Usability Testing
+		1.Check whether user has entered correct url. 
+		2. Check whether the given url works in other web   browsers.                                                                                    
+		3. Check whether the page content has any  incorrect spelling or grammatical errors.                                                                                   
+		4.Check whether all fonts are same as per the requirement.                                                                    
+		5.Check whether all the fields are correctly aligned.                                          
+		 6. Check whether enough space is provided between field labels,rows and columns.                                                                                                       
+		7. Check whether all buttons are in a standard format and size.  
+
+
+Types of Testing
+	- GUI Testing
+	- Usability Testing
+	- Functionality Testing
+	- Equivalence Class Partioning
+	- Boundary Value Analysis	
+
+What is Functionality Testing
+	Testing in which functionalities of a software are tested by giving different inputs
+	- Identifying how a functionality is expected to behave
+	- Creating input data to check the functionality (Based on requirements)
+	- Executing the prepared test cases
+	- Comparing actual results with the expected results
+
+	Name 
+		- should be alphabets
+		- Should be a valid email format
+		- doesn't contain special characters
+		- doesn't contain null value
+
+What is Equivalence Class Partioning 
+	It is a test design technique
+	It is Divided input test data into partitions
+	It is used in unit-testing in white box testing
+	It is used in system testing in black box testing
+	It saves time because to pick up one value from each partition, whether the system accepts it or not
+
+	Invalid Partition	=> Min - 1			=> Should reject the value
+	Valid Partition          => In between the range inclusive	=> Should accept the value
+	Invalid Partition	=> Max + 1			=> Should reject the value
+
+	Date => 1 - 31
+	Invalid partition	=> Min - 1
+		0, -1, -2, -3,....
+	Valid Partition          => In between the range inclusive
+		1, 2, 3, 4, 5, ....., 30, 31
+	Invalid Partition	=> Max + 1
+		32, 33, 34,......
+
+	Username => 6 to 10 characters
+	Invalid Partition	=> Min - 1
+		0 character, 1 character, ......, 5 character
+	Valid Partition          => In between the range inclusive
+		6 character, 7 character, ......., 10 character
+	Invalid Partition	=> Max + 1
+		11 character, 12 character, ............
+	
+	Age => 18 to 80 years except 60 to 65 years
+	Invalid partition	=> Min - 1
+		....., 0 year, 1 year, ........., 17 years
+	Valid Partition          => In between the range inclusive
+		18, 19, .............., 59 years
+	Invalid partition	=> Min - 1
+		60, 61, 62, 63, 64 ,65 years
+	Valid Partition          => In between the range inclusive
+		66, 67, ....., 79, 80 years
+	Invalid Partition	=> Max + 1
+		81, 82, ......................
+	
+	
+What is Boundary Value Analysis
+	It is a test design technique
+	Related to Equivalence Class Partitioning
+	Test Both sides(upper bound, lower bound) 
+
+	Date => 1  - 31
+	Invalid Partition - valid partition lower boundary
+		Boundary value just below the boundary => 0 (reject by the system)
+		Boundary value just above the boundary => 1 (accept by the system)
+
+	Invalid Partition - valid partition upper boundary
+		Boundary value just below the boundary => 31 (accept by the system)
+		Boundary value just above the boundary => 32 (reject by the system)
+
+	Username => 6 to 10 characters
+	Invalid Partition - valid partition lower boundary
+		Boundary value just below the boundary => 5 characters (reject by the system)
+		Boundary value just above the boundary => 6 characters (accept by the system)
+
+	Invalid Partition - valid partition upper boundary
+		Boundary value just below the boundary => 10 characters (accept by the system)
+		Boundary value just above the boundary => 11 characters (reject by the system)
+
+	Floating Point Values => 0.2 - 0.8
+	Invalid Partition - valid partition lower boundary
+		Boundary value just below the boundary => 0.1 (reject by the system)
+		Boundary value just above the boundary => 0.2 characters (accept by the system)
+
+	Invalid Partition - valid partition upper boundary
+		Boundary value just below the boundary => 0.8 (accept by the system)
+		Boundary value just above the boundary => 0.9 (reject by the system)
+	
+
+What is Expected Results
+	Should save the data in database
+	System should prompt the user to enter valid users
+	
+	

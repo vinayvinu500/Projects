@@ -1,0 +1,352 @@
+Day => 30-03-2022
+Team members => Vinay, Nidhin, Surekha, Susmita (Team C)
+Sprint 1 => 30-03-2022 - 01-03-2022 (3 days of sprint)
+Day 1 => Analyse the Requirement and have a look of user stories (simple task of creating user stories on Upper login - Surekha, Lower login - Susmita, Sign-up - Nidhin, analyse the application and written requirements/document - Vinay)
+Link => https://drive.google.com/drive/folders/1SA7-sghZtTgLJ9dSaivEfGSZL8AGPm-Q?usp=sharing
+====================================================
+Scrum Master
+- He is not a TL/TM
+- He is Certified Scrum Master
+- Protect the Team
+- Follows the instructions given by the Product Owner
+- Scrum master allocates the user stories based on Roles and Responsibilities to the Team
+ 
+Scrum Team
+- Teams are resources available in development and testing
+- User stories are selected by the teams
+- Create deliverables (Test Scenario, Test Cases, Defect Report, RTM)
+
+====================Sprint 1===========================
+- Analyse the Requirement
+- Write the User Stories
+
+"Project Management Activity: Product Owner
+
+1. Create user stories  based open functionality 
+         I. Understanding requirements
+         II. Assign priority 
+         III. Assign user stories to team members
+2. Identify the Dependancy between the requirements
+3. Final ordering of product backlog item( set of all user stories)
+
+Create  Task / Deliverables:
+1. List of User Stories & Functions to test
+2. All tasks with JIRA should be ready in SCRUM template"
+
+
+================Overview====================
+Spicejet is a flight booking platform for online passengers through web-Check-In
+Spicejet provides a economy and business flights and private flights 
+It provides Cargo to SpiceShuttle
+It offers wide range deals to Add-ons
+It offers Hotel to SpiceHolidays
+It offers SpiceClub to SpiceScreen
+
+===============Prioritise=============
+- Register
+- Login
+	- Travel Agent
+	- Sub Agent
+	- Corporate Accounts
+	- SME Travellers
+
+- Book a Economy Flights
+	- Book a Normal Flight => Economy, Business Class
+
+- Book a Private Flights 
+	- Charter
+	- SpiceShuttle
+	- Cargo 
+
+- Plan Your Travel
+	- Group Travel
+	- SME Flyer
+	- Corporate Traveller
+	
+- Hotels
+- SpiceHolidays
+
+- Deals 
+- Add-ons
+	- SpiceMAX
+	- Hot Meals
+	- Seat + Meal Combo
+	- You-1st
+	- International Connection Baggage
+	- Visa Services
+	- MyFlexiPlan
+	- Spice Assurance
+	- Travel Insurance
+	- Friends and Family
+	- Senior Citizen Discount
+	- Student Discount
+	- Extra Seat
+	- Zero Cancellation
+	- Covid-19 RT-PCR Test
+	- Indian Armed Forces Personnel
+	- International SIM Cards
+	- SpiceFlex
+	- Govt. Employee
+	- Healthcare Professionals
+	- SpicePlus
+	- Forex Services
+	- Activities
+	- SpiceJet Luggage Assist
+	- FlyEarly
+
+- SpiceScreen
+- Gift Card
+- SpiceClub
+
+
+
+=======================Scope Functionality======================
+In-Scope Functionality
+	- Signup
+	- Login
+	- Flight Booking
+		- Flights
+		- Check-In
+		- Flight Status
+		- Manage Booking
+	- Hotels
+	- Add-ons
+	- Deals
+	- Gift Card
+	- SpiceClub
+	- SpiceScreen
+	- Cargo
+	- SpiceHolidays
+	- SpiceShuttle
+	- Charter
+
+Out-Scope Functionality
+	-Footer section
+		- About Us
+		- Contact Us
+		- Travel Info
+		- Investors
+		- Spice Route Magazine
+		- Connect With us
+		- Chat via WhatsApp
+		- Download our Mobile app
+		- HyperLinks	
+			- Home
+			- Privacy Policy
+			- Terms and Conditions
+			- GST Information
+			- Sitemap
+
+Test Environments
+	- Windows 10 - Chrome, Firefox and Edge
+	- MacOS - Safari, Chrome
+	- Android Mobile OS - Chrome
+	- iPhone Mobile OS - Safari, Chrome
+
+Exclusions
+	- All the features except that are mentioned under "In-Scope"
+	- Any Third-party features or Payment Gateways
+	- Test Automation
+
+===================Home Page Modules============================
+Home Page => https://www.spicejet.com/
+
+=====Header Section=====
+	SpiceJet logo
+	Modules / Services
+		Hotels
+		Add-ons
+			SpiceMAX
+			Hot Meals
+			Seat + Meal Combo
+			You-1st
+			International Connection Baggage
+			Visa Services
+			MyFlexiPlan
+			Spice Assurance
+			Travel Insurance
+			Friends and Family
+			Senior Citizen Discount
+			Student Discount
+			Extra Seat
+			Zero Cancellation
+			Covid-19 RT-PCR Test
+			Indian Armed Forces Personnel
+			International SIM Cards
+			SpiceFlex
+			Govt. Employee
+			Healthcare Professionals
+			SpicePlus
+			Forex Services
+			Activities
+			SpiceJet Luggage Assist
+			FlyEarly
+		Deals 
+		Gift Card
+		SpiceClub
+		SpiceScreen 
+		Cargo
+		SpiceHolidays 
+		SpiceShuttle 
+		Charter 
+
+	Login | Signup
+		SpiceClub Members
+			Members Login
+			Sign Up
+
+		Login as
+			Travel Agent Login
+			Sub Agent Login (Agent Plus)
+			Corporate Accounts
+			SME Traveller
+
+=======Body Section======
+	Flight
+	Check-In
+	Flight Status
+	Manage Booking
+	
+	Slides (5) => https://corporate.spicejet.com/extraseat.aspx
+	
+	News
+	
+	I am Here for 
+		Change Assist 
+		Deals 
+		Covid Info 
+		SpiceScreen 
+		Activities 
+		GST Invoices
+			Confirmation Number*
+			Invoice Number*
+			Submit (Button)
+	
+	Irresistible Promotions & Deals
+		Explore More 
+		
+	Recommended Add-Ons
+		SpiceMax
+		Extra Seat
+		SpicePlus
+	
+	Plan Your Travel
+		Group Travel
+		SME Flyer
+		Corporate Traveller
+	
+	SpiceClub Loyalty Program
+		Know More
+		Join SpiceClub
+	
+	Cargo => Book Now!
+	Charter => Book Now!
+		
+=======Footer Section======
+	About Us
+		Corporate Overview
+		Fleet
+		Charter Request
+		Careers
+		Media Center
+		Tariffs
+
+	Contact Us
+		Airports
+		International Offices
+		Corporate Head Office
+		Advertise with Us
+		RFP
+
+	Travel Info
+		SpiceScreen
+		Citizen's Charter
+		FAQ
+		Special Assistance
+		Fitness To Fly Guideline
+		Flight Schedules
+		Terms of Carriage
+		Know your rights
+		Covid related Information
+		Track Your Bag
+
+	Investors
+		Corporate Governance
+		Financial Information
+		Notices
+		Corporate Announcements
+		Shareholding Pattern
+
+	Spice Route Magazine
+		March 2020
+		February 2020
+		January 2020
+		December 2019
+		November 2019
+		October 2019
+
+	Connect With us
+		Facebook
+		Twitter
+		Instagram
+		Youtube
+		Whatsapp
+
+	Chat via WhatsApp
+	Download our Mobile app
+		Get It on Google Play
+		Download on the App Store
+
+	Home
+	Privacy Policy
+	Terms and Conditions
+	GST Information
+	Sitemap
+
+
+=======================Description===============================
+===============Account & Login=====================
+Register
+Step 1 : Sign-Up 
+	Creating SpiceJet Account in Sign_Up Page
+
+Login
+Step 1: Login
+	After Register, Login with Own Creditionals
+
+
+
+===============Booking a Flight Ticket==============
+
+===================SpiceShuttle=====================
+
+===================Charter==========================
+
+===================Cargo============================
+
+
+
+===================Book a Hotel======================
+
+===================SpiceHolidays=====================
+
+
+
+
+===================Plan Your Travel================
+
+===================Add-Ons========================
+
+===================Deals==========================
+
+===================GiftCard========================
+
+===================SpiceClub========================
+
+===================SpiceScreen========================
+
+
+
+
+
+
