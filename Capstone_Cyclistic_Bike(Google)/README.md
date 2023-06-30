@@ -7,6 +7,15 @@
 - Files : [https://drive.google.com/drive/folders/1_K8hXS4KymF1h3jNobG3QPSQzszpES65?usp=sharing](https://drive.google.com/drive/folders/1_K8hXS4KymF1h3jNobG3QPSQzszpES65?usp=sharing)
 - Database : bike (MySQL)
 
+# ETL Process
+  - Extract : Web source
+  - Transformation : Python
+  - Load: MySQL
+
+# Visualization
+  - Excel: Performed ODBC connection to fetch from MySQL
+  - Tableau: Business Intelligence Tool to share the reports
+
 # Logs
 
 - 09-11-2022: setting up the mysql database
